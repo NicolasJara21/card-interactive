@@ -1,0 +1,166 @@
+body{
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+}
+.backgraund{
+    background-image: url(images/bg-main-desktop.png);
+    height: 100vh;
+    width: 35vw;
+    background-size: cover;
+}
+.container{
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    grid-template-rows:100%;
+}
+
+/* card */
+.card{
+    margin: 100px 0px;
+}
+.card-one{
+    position: relative;
+    left: 150px;
+    background-image: url(images/bg-card-front.png);
+    background-size: cover;
+    height: 220px;
+    width: 60%;
+    font-size: 10px;
+    border-radius: 10px;
+    color: hsl(270, 3%, 87%);
+}
+.card-line{
+    display: flex;
+    justify-content: space-around;
+}
+.card-number{
+    text-align: center;
+    position: relative;
+    top: 130px;
+}
+.card-name, .card-date{
+    font-size: 13px;
+    position: relative;
+    top: 130px;
+}
+
+.card-two{
+    background-image: url(images/bg-card-back.png);
+    height: 220px;
+    width: 60%;
+    background-size: cover;
+    border-radius: 10px;
+    color: hsl(270, 3%, 87%);
+    position: relative;
+    left: 250px;
+}
+.card-back{
+    font-size: 15px;
+    text-align: end;
+    padding: 100px 60px;
+}
+/* error */
+
+.error-cardnumber{
+    display: none;
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+}
+.h2-error{
+    display: flex;
+    font-size: 12px;
+    color: hsl(0, 100%, 66%);
+    justify-content: space-around;
+
+}
+.h2-error h2{
+    display: none;
+    font-size: 12px;
+    margin: 0%;
+    padding: 0px;
+}
+
+
+/* form */
+.form{
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+}
+.form h1{
+    font-size: 17px;
+}
+input{
+    text-indent: 2%;
+    border: 1px solid hsl(278, 68%, 11%);
+    border-radius: 5px;
+    height: 35px;
+}
+
+.h1-line{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.form-line{
+    display: flex;
+}
+.input-mes{
+    width: 80px;
+    margin: 5px;
+}
+.input-numero{
+    width: 175px;
+    margin: 5px;
+    text-indent: 2%;
+}
+
+.button{
+    position: absolute;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 60vh;
+    height: 45px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(278, 68%, 11%);
+    margin-top: 40px;
+}
+
+.input-card-name{
+    width: 60vh;
+    text-indent: 2%;
+}
+.input-card-number{
+    width: 60vh;
+    text-indent: 2%;
+}
+
+/* envio */
+
+.container-envio{
+    height: 500px;
+    width: 500px;
+    text-align: center;
+}
+.logo{
+    
+    background-image: url(images/bg-main-mobile.png);
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-size: cover;
+}
+.subtitulo{
+    color: hsl(0, 0%, 28%);
+}
+.button-envio{
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(278, 68%, 11%);
+    width: 250px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+}

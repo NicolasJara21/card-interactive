@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="backgraund">
+        <container>
+        <div class="container">
+            <div class="card">
+                <div class="card-one">
+                    <h1 class="card-number">0000 0000 0000 0000</h1>
+                    <div class="card-line">
+                        <h1 class="card-name">Jane Appleseed</h1>
+                        <h1 class="card-date">00/00</h1>
+                    </div>
+                </div>
+<!-- card two -->
+                <div class="card-two">
+                    <h1 class="card-back">000</h1>
+                </div>
+            </div>
+    
+    
+            <div class="form">
+                <div>
+                    <h1>Cardholder Name</h1>
+                    <form>
+                        <input placeholder="Jane Appleseed" class="input-card-name" type="text">
+                    </form>
+                </div>
+                <div>
+                    <h1>Card Number</h1>
+                    <form>
+                        <input placeholder="0000 0000 0000 0000" class="input-card-number" type="number">
+                    </form>
+                    <h2 class="error-cardnumber">Wrong format, numbers only</h2>
+                </div>
+                <div class="input-3">
+                    <div class="h1-line">
+                        <h1>Exp. Date (MM/YY)</h1>
+                        <h1>CVC</h1>
+                    </div>
+                        <div>
+                            <form class="form-line">
+                                <input class="input-mes" type="number" placeholder="MM">
+                                <input class="input-mes"  type="number" placeholder="YY">
+                                <input class="input-numero"  type="number" placeholder="e.g. 123">
+                            </form>
+                        </div>
+                        <div class="h2-error">
+                            <h2 class="error-exp-date">Can't be blank</h2>
+                            <h2 class="error-cvc">Can't be blank</h2>
+                        </div>
+                </div>
+                <div class="container-button">
+                    <button class="button">Confirm</button>
+                </div>
+            </div>
+        </div>
+        </container>
+    </div>
+    
+    <!-- Completed state start -->
+    <div class="container-envio">
+        <div class="logo"></div>
+        <h1 class="titulo">Thank you!</h1>
+        <p class="subtitulo">We've added your card details</p>
+        <button class="button-envio">Continue</button>
+    </div>
+</body>
+</html>
