@@ -107,7 +107,7 @@ input{
 .form-line{
     display: flex;
 }
-.input-mes{
+.input-mes, .input-año{
     width: 80px;
     margin: 5px;
 }
@@ -117,7 +117,7 @@ input{
     text-indent: 2%;
 }
 
-.button{
+#button{
     position: absolute;
     font-size: 16px;
     border: none;
@@ -129,7 +129,7 @@ input{
     margin-top: 40px;
 }
 
-.input-card-name{
+#input-card-name {
     width: 60vh;
     text-indent: 2%;
 }
@@ -163,4 +163,10 @@ input{
     height: 50px;
     border-radius: 5px;
     border: none;
+}
+.line-month{
+    display: flex;
+    font-size: 6px;
+    position: relative;
+    top: 131px;
 }

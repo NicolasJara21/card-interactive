@@ -18,7 +18,10 @@
                     <h1 class="card-number">0000 0000 0000 0000</h1>
                     <div class="card-line">
                         <h1 class="card-name">Jane Appleseed</h1>
-                        <h1 class="card-date">00/00</h1>
+                        <div class="line-month">
+                            <h1 class="card-month">00/</h1>
+                            <h1 class="card-year">00</h1>
+                        </div>
                     </div>
                 </div>
 <!-- card two -->
@@ -27,18 +30,19 @@
                 </div>
             </div>
     
-    
+<!-- form -->
+
             <div class="form">
                 <div>
                     <h1>Cardholder Name</h1>
                     <form>
-                        <input placeholder="Jane Appleseed" class="input-card-name" type="text">
+                        <input placeholder="Jane Appleseed" id="input-card-name" type="text">
                     </form>
                 </div>
                 <div>
                     <h1>Card Number</h1>
                     <form>
-                        <input placeholder="0000 0000 0000 0000" class="input-card-number" type="number">
+                        <input placeholder="0000 0000 0000 0000" class="input-card-number" maxlength="16" type="number">
                     </form>
                     <h2 class="error-cardnumber">Wrong format, numbers only</h2>
                 </div>
@@ -49,9 +53,9 @@
                     </div>
                         <div>
                             <form class="form-line">
-                                <input class="input-mes" type="number" placeholder="MM">
-                                <input class="input-mes"  type="number" placeholder="YY">
-                                <input class="input-numero"  type="number" placeholder="e.g. 123">
+                                <input class="input-mes" type="number" maxlength="2" placeholder="MM">
+                                <input class="input-año"  type="number" maxlength="2" placeholder="YY">
+                                <input class="input-numero"  type="number" maxlength="3" placeholder="e.g. 123">
                             </form>
                         </div>
                         <div class="h2-error">
@@ -60,7 +64,7 @@
                         </div>
                 </div>
                 <div class="container-button">
-                    <button class="button">Confirm</button>
+                    <button id="button">Confirm</button>
                 </div>
             </div>
         </div>
@@ -74,5 +78,7 @@
         <p class="subtitulo">We've added your card details</p>
         <button class="button-envio">Continue</button>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
